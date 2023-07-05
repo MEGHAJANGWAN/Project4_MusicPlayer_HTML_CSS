@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 20px;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .audio{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+           
+        }
+
+        .main{
+            border: 2px solid black;
+            padding: 100px;
+            margin-left: 500px;
+            margin-right: 500px;
+            border-radius: 10px;
+        }
+
+        div.main{
+            box-shadow: 10px 10px 12px 12px rgb(125, 136, 143);
+        }
+
+        button{
+            border: none;
+            color: hsl(0, 21%, 85%);
+            border-radius: 5px;
+            background-color: rgb(0, 128, 0);
+            padding: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Player</h1>
+
+    <div class="main">
+    <div class="audio">
+    <audio controls src="D:\PHOTOS\Gadhwali songs\03.mp3"> 
+        Your browser does not support your audio element. 
+    </audio>
+    </div>
+
+    <div class="button">
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button> 
+    <button onclick="stopAudio()">Stop</button>
+    </div>
+    </div>
+
+</body>
+</html>
